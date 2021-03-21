@@ -1,3 +1,5 @@
+from pandas import *
+
 def block(x,y,board):           # Esta funcion pon e el caracter del alfin en (x,y) y 
     board[x][y] = '♗'           # pone una 'x' en todos los lugares a los que ataca
     for i in range(n):
