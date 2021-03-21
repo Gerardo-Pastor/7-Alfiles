@@ -58,7 +58,7 @@ def DFSNBishops(n):
     Boards = []
     BoardStack.append(InitialBoard)
 
-    while(len(BoardStack) != 0):
+    while(len(BoardStack) != 0 and len(Boards) < 2**n):
         CurrentBoard = BoardStack.pop()
         Children = getChildrenBoards(CurrentBoard)
         if(len(Children) == 0): 
