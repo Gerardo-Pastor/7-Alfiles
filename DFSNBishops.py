@@ -17,5 +17,6 @@ def DFSNBishops(n):
                 elif (getNomberOfBishops(CurrentBoard) == getNomberOfBishops(Boards[-1]))
                     Boards.append(CurrentBoard)
 	 else:
-            BoardStack.append(Children)
+	    for child in Children:
+                BoardStack.append(child)
 
