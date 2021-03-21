@@ -11,10 +11,10 @@ def DFSNBishops(n):
             if(len(Boards) == 0):
                 Boards.append(CurrentBoard)
             else:
-                if(getNumberOfBishops(CurrentBoard) > getNumberOfBishops(Boards[-1]))
+                if(getNumberOfBishops(CurrentBoard) > getNumberOfBishops(Boards[-1])):
                     Boards.pop()
                     Boards.append(CurrentBoard)
-                elif (getNumberOfBishops(CurrentBoard) == getNumberOfBishops(Boards[-1]))
+                elif (getNumberOfBishops(CurrentBoard) == getNumberOfBishops(Boards[-1])):
                     Boards.append(CurrentBoard)
 	 else:
 	    for child in Children:
